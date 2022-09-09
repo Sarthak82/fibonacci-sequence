@@ -1,0 +1,10 @@
+# fibonacci sequence using recursion
+def func(numb):
+    if numb==0 or numb==1:
+        return numb
+    f1=func(numb-1)
+    f2=func(numb-2)
+    sum=f1+f2
+    return sum
+
+print(func(6))
